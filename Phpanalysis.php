@@ -1135,5 +1135,3 @@ class Phpanalysis
         return true;
      }
 }
-
-?> 
