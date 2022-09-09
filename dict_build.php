@@ -1,9 +1,14 @@
 <?php
 //编译词库
-ini_set('memory_limit', '128M');
+ini_set('memory_limit', '256M');
+ini_set('display_errors', 1);
 error_reporting(E_ALL);
+
 header('Content-Type: text/html; charset=utf-8');
-require_once('phpanalysis.class.php');
+
+require_once('Phpanalysis.php');
+use Phpanalysis\Phpanalysis;
+
 $dicAddon = dirname(__FILE__).'/dict/not-build/base_dic_full.txt';
 
 if( empty($_GET['ac']) )
