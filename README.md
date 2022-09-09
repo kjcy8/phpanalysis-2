@@ -8,10 +8,10 @@ composer require lmz/phpanalysis
 
 ## 示例
 ```
-use Phpanalysis\PhpAnalysis;
+use Phpanalysis\Phpanalysis;
 
-PhpAnalysis::$loadInit = false;
-$pa = new PhpAnalysis('utf-8', 'utf-8', true);
+Phpanalysis::$loadInit = false;
+$pa = new Phpanalysis('utf-8', 'utf-8', true);
 
 //载入词典
 $pa->LoadDict();
